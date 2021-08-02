@@ -2,8 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: cor-helloworld
-  name: cor-helloworld
+    app: core-helloworld
+  name: core-helloworld
   namespace: default 
 spec:
   replicas: 5
