@@ -2,11 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: python-helloworld
-  name: python-helloworld
+    app: core-helloworld
+  name: cor-helloworld
   namespace: default 
 spec:
-  replicas: 3
+  replicas: 5
   selector:
     matchLabels:
       app: python-helloworld
@@ -18,7 +18,7 @@ spec:
   template:
     metadata:
       labels:
-        app: python-helloworld
+        app: core-helloworld
     spec:
       containers:
       - image: akibirio/core-helloworld:v1.0.0
