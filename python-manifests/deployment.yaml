@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: core-helloworld
-  name: cor-helloworld
+  name: core-helloworld
   namespace: default 
 spec:
   replicas: 5
